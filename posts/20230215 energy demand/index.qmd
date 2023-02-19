@@ -1,0 +1,85 @@
+---
+title: "Understanding the heating in your home"
+author: "Simon Mackenzie"
+date: "2023-02-09"
+categories: [home, analysis]
+image: "dewpoint.png"
+draft: true
+---
+# What is power and energy?
+
+> Power (kw) = Energy (kwh) / Time (hours)
+
+Power is the rate at which energy is generated or used. It can be measured in Watts. A 100W lightbulb uses the same power as two 50W lightbulbs.
+
+Energy is the amount of power used over a period of time. It can be measured in WattHours. So a 1 kw fire for one hour will require 1 kwh of energy. Sometimes different units are used e.g. Calories, Joules, Therms or BTUs. These can easily be converted to Kilowatt hours.
+
+A kwh is exactly the same amount of energy whether it comes from electricity, gas or something else. So a 1 kwh electric fire and 1 kwh standalone, propane fire produce exactly the same amount of energy and heat the room at the same rate.
+
+# Demand for energy
+
+To maintain temperature we need to provide energy at the same rate it is lost via leakage and ventilation. The higher the temperature gap between inside and outside, the faster the loss via leakage/ventilation so correspondingly more energy is needed to replace that loss.
+
+## Leakage
+
+> Leakage kwh = Area * U * deltaT
+
+Energy is leaked through walls, windows, floor and ceiling. Energy does not get "used up". Eventually it all leaves the room via one of these surfaces.
+
+Area is the square metres of the surface. So the leakage is directly proportional to the area.
+
+DeltaT is the difference between the room temperature and outside temperature. If it is 10C inside and 10C outside then leakage is zero. If you heat your house to the same temperature in each room then leakage through internal walls is zero; downstairs ceiling is zero; upstairs floor is zero. To maintain 20C room temperature when it temperature is 0C outside requires double the energy of when it is 10C outside as delta is 20 versus 10.
+
+U varies according to the material and thickness. A typical wall will have layers of different material each of different materials and thickness. The U value represents how those materials conduct heat in aggregate. For a modern house U values are clearer than older houses where you may not know the materials used and they may have degraded over time. The table shows examples of typical U values:
+
+![](uvalues.png)
+
+This shows:
+
+* Modern homes are much more efficient than older homes
+    - A new wall eliminates 50% of the leakage versus an uninsulated wall
+    - A new window eliminates 80% of leakage versus a single glazed window
+    - A new roof eliminates 90% of the leakage versus an uninsulated roof
+    - A new floor eliminates 80% of the leakage from an uninsulated wooden floor
+* Windows have five times the leakage per square metre versus walls
+* Floors are just as leaky as roofs. On an older house it is easy to insulate the roof. Once that is done the floor is leaking six times more heat than the roof. Many think that heat rises so the ceiling/roof is key. Actually it is not heat that rises but hot air. Unless you have holes in your ceiling the air will stay in the room. Therefore heat loss through the floor is just as critical as the roof. Unfortunately this can be hard to address on older properties.
+
+## Ventilation
+
+> ventilation loss = .33 * Air changes per hour * Volume * deltaT
+
+If your home were air tight then you would suffocate. So there is some air coming in from outside through gaps under doors, vents and elsewhere. The leakage formula does not work here as U is infinite. The issue is how fast the air is coming in.
+
+ It is not clear how to estimate Air changes per hour (ACPH). I am using figures from Engineering toolbox who suggest .33 + .33 * number of external windows/doors. Multiple alternatives such as the OU suggest circa .5. Great_home suggest 1.5.
+
+[Engineering Toolbox]<https://www.engineeringtoolbox.com/air-change-rate-d_882.html>
+
+[Open University]<https://www.open.edu/openlearn/nature-environment/energy-buildings/content-section-2.4.1>
+
+## Example of leakage/ventilation from a room
+
+There is an online calculator to apply the formulae 
+
+[Online calculator]<https://great-home.co.uk/radiator-sizing-guide-and-btu-calculator>
+
+I have adapted this using my own assumptions for a single room but there is a lot of guesswork:
+
+* Cavity wall insulation in my house is from 1935 so it may be low standard or have deteriorated
+* It is unclear what material is hidden in the floors, walls and ceiling following multiple extensions in different years
+* The attic is insulated but there are old metal tanks that conduct heat. Too big to fit through the rafters.
+* Unclear how to set ACPH. Used .7 but could be .5 or 1.5
+
+![](office pie.png)
+
+When temperature outside is -1C it requires slightly more than a 1 kw electric fire to maintain temperature in my office. The estimate of demand using the U value formula is 1.4K. This is in the right ballpark but could be 40% too high. Also it is very sensitive to the ACPH factor as 24% of energy loss is via ventilation.
+
+Tried a bedroom as well. There are a few expected differences. Smaller room; upstairs demand is lower as an insulated ceiling is better than uninsulated floor; and windows upstairs are smaller but older. The biggest drivers are the size of room and ACPH. Other variations in characteristics seem to balance out. 
+
+I have expanded the calculations for the office to the rest of the house based on room size only. This gives total maintenance energy of 12kwh, 9kwh, 6.7kwh at -1C, 5C, 10C respectively. Heating the house from cold is in addition to this. My smart meter spikes when the heating goes on. The spike is because it has to heat the water from cold; and because the deltaT is over 20C so the kwh of the radiator is at its highest. After a few hours it stabilises at half the peak.
+
+# Conclusion
+
+## How can I reduce my energy usage?
+
+1. Add more insulation
+2. Find any air gaps and fill them

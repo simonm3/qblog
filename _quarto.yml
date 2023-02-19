@@ -1,8 +1,10 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "qblog"
+  title: "qblog title"
+  site-url: https://simonm3.github.io/qblog
   navbar:
     right:
       - about.qmd
@@ -10,6 +12,12 @@ website:
         href: https://github.com/
       - icon: twitter
         href: https://twitter.com
+
+  google-analytics: 
+      tracking-id: "G-2VEP128SFL"
+
+  margin-header: subscribe.html
+
 format:
   html:
     theme: cosmo
@@ -18,6 +26,3 @@ format:
 comments:
   giscus:
     repo: simonm3/qblog
-
-
-

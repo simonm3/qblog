@@ -1,0 +1,63 @@
+---
+title: "Understanding the heating in your home"
+author: "Simon Mackenzie"
+date: "2023-02-09"
+categories: [home, analysis]
+image: "dewpoint.png"
+draft: true
+---
+# What is efficiency?
+
+> energy_supplied = energy_used
+
+This is a law of physics. It is a zero sum game. If you input 1 kwh of energy then it will output 1 kwh of heat. Nothing is "used up". However some of that energy may go into things other than what we want.
+
+> efficiency = energy_used_for_what_we_want / energy_supplied
+
+Efficiency is the % of the input energy (kwh) that goes into heating your home to your desired temperature. As the room warms up energy will leak through the walls, ceiling, windows and floor. The heater has to work harder just to replace the energy lost through leakage. Eventually all the heat is being used to maintain temperature and it won't get any warmer.
+
+> cost efficiency = energy_supplied_for_what_we_want / £_supplied
+
+The price of 1 kwh of electricity is three times that of 1 kwh of gas. Even though a gas boiler loses 15% to the flue it will still work out cheaper than electric heating in most cases.
+
+# Supply of energy
+
+The table shows Stelrad radiator outputs. Other makes may vary but are likely similar. In general radiator suppliers quote outputs at delta T50. This means 50C difference between radiator and room temperature. The radiator temperature used is the average of input and output. For example input 75C, output 65C gives radiator 70C. With room at 20C that gives delta = 70-20 = 50C.
+
+[Stelrad radiator guide]<https://www.stelrad.com/wp-content/uploads/2018/05/27559_Stelrad-Spec-Brochure_August-2022_FLIPBOOK.pdf>
+
+![](radiator outputs.png)
+
+Setting the boiler to 60C gives T35 for spring and autumn temperatures. Setting the boiler to 70C gives T45 for winter temperatures. To adapt from T50 to other values of deltat we apply this forumula:
+
+> P = P50 * (tin-tout)/(ln(tin-ta)-ln(tout-ta))/49.32)^1.33
+
+![](deltat conversion.png)
+
+# Matching demand and supply
+
+The table below shows how well my radiators meet the demand by room at external temperatures of -1C, 5C, 10C with the boiler set to T35 and T45.
+
+![](utilisation.png)
+
+The pink cells show where radiator supply is less than demand. Not that in this case demand means ability to maintain temperature only. Additional watts would be needed to warm the house in the first place.
+
+The model suggests:
+
+* 60C is enough not enough for some rooms but is overall. In practice it is not enough for any rooms let alone overall. One reason for this is that these figures only include maintenance. In addition the rooms need to be warmed up from cold. As they warm the leakage increases and sometimes there insufficient kwh to get to the target temperature.
+* 70C is easily enough. Mostly this is true in practice as long as all the radiators are on
+
+Some rooms are very hard to estimate
+
+* bedroom2 has a cupboard into the eves which is uninsulated. Possibly could insulate or add a draft excluder. It also has two external walls that face North; and an ensuite that has a flat roof which may well have poor insulation.
+* Landing/Hall are open plan; uninsulated external door; likely drafts
+* Kitchen has to heat the utility room as well. This has boiler but no radiator and a door with single glazed glass. The adjacent morning room radiator is overpowerer so helps make up the difference across all three rooms
+
+Note also that all the above is just to maintain the temperature at the desired 20C. However unless the heating is on 24/7 we need to warm the house from cold at least once or twice a day. There are formulae to tell us the power required and the time it should take.
+
+> Power to heat room = cp * density * volume * deltaT
+> Time to heat room = Energy/Power / 60 minutes
+
+Unfortunately these formulae ignore leakage. When the room is cold there is not so much leakage. However as it warms the leakage increases and the power available gets soaked up by the leakage leaving less and less to heat the room. As both the leakage and energy supplied are changing as it warms the calculation is not straightforward. Neverthless it does mean that we need significantly more than maintenance energy during the warm up period.
+
+
