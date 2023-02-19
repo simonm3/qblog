@@ -1,5 +1,5 @@
 ---
-title: "qblog"
+title: "Recent posts"
 listing:
   contents: posts
   sort: "date desc"

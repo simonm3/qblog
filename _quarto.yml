@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "qblog title"
+  title: "Home"
   site-url: https://simonm3.github.io/qblog
   navbar:
     right:

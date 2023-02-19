@@ -5,7 +5,7 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>qblog title</title>
+<title>Home</title>
 <link>https://simonm3.github.io/qblog/index.html</link>
 <atom:link href="https://simonm3.github.io/qblog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
@@ -31,6 +31,27 @@
   <guid>https://simonm3.github.io/qblog/posts/post-with-code/index.html</guid>
   <pubDate>Fri, 13 Jan 2023 00:00:00 GMT</pubDate>
   <media:content url="https://simonm3.github.io/qblog/posts/post-with-code/image.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Post With Code</title>
+  <dc:creator>Harlow Malloc</dc:creator>
+  <link>https://simonm3.github.io/qblog/posts/post-with-code copy/index.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>This is a post with executable code.</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <category>code</category>
+  <category>analysis</category>
+  <guid>https://simonm3.github.io/qblog/posts/post-with-code copy/index.html</guid>
+  <pubDate>Fri, 13 Jan 2023 00:00:00 GMT</pubDate>
+  <media:content url="https://simonm3.github.io/qblog/posts/post-with-code copy/image.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Welcome To My Blog</title>
