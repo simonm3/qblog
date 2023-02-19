@@ -1,1 +1,1 @@
-Sitemap: https://github.com/simonm3/qblog/sitemap.xml
+Sitemap: https://simonm3.github.io/qblog/sitemap.xml

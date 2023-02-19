@@ -197,41 +197,8 @@ gtag('config', 'G-2VEP128SFL', { 'anonymize_ip': true});
 
 </header>
 
-<section id="introduction" class="level1">
-<h1>Introduction</h1>
-<section id="the-key-questions" class="level2">
-<h2 class="anchored" data-anchor-id="the-key-questions">The key questions</h2>
-<p>As gas prices soared I had some questions about my home energy usage:</p>
-<ul>
-<li>Why are my energy bills so high when I have most of the radiators switched off?</li>
-<li>How can I reduce my energy usage?</li>
-<li>When is it more effective to use electric heaters than gas central heating?</li>
-</ul>
-<p>To answer these questions I analysed how much energy my house should be using; how much is delivered by the central heating; and how the demand and supply are matched.</p>
-<ol start="0" type="1">
-<li>Introduction</li>
-<li>Review of some key definitions</li>
-<li>Demand for energy</li>
-<li>Supply of energy</li>
-<li>Matching demand and supply</li>
-<li>Heating one room instead of the whole house</li>
-<li>The answers</li>
-</ol>
-</section>
-</section>
-<section id="review-of-some-key-definitions" class="level1">
-<h1>Review of some key definitions</h1>
-<section id="what-is-power-and-energy" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-power-and-energy">What is power and energy?</h2>
-<blockquote class="blockquote">
-<p>Power (kw) = Energy (kwh) / Time (hours)</p>
-</blockquote>
-<p>Power is the rate at which energy is generated or used. It can be measured in Watts. A 100W lightbulb uses the same power as two 50W lightbulbs.</p>
-<p>Energy is the amount of power used over a period of time. It can be measured in WattHours. So a 1 kw fire for one hour will require 1 kwh of energy. Sometimes different units are used e.g.&nbsp;Calories, Joules, Therms or BTUs. These can easily be converted to Kilowatt hours.</p>
-<p>A kwh is exactly the same amount of energy whether it comes from electricity, gas or something else. So a 1 kwh electric fire and 1 kwh standalone, propane fire produce exactly the same amount of energy and heat the room at the same rate.</p>
-</section>
-<section id="what-is-efficiency" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-efficiency">What is efficiency?</h2>
+<section id="what-is-efficiency" class="level1">
+<h1>What is efficiency?</h1>
 <blockquote class="blockquote">
 <p>energy_supplied = energy_used</p>
 </blockquote>
@@ -244,60 +211,6 @@ gtag('config', 'G-2VEP128SFL', { 'anonymize_ip': true});
 <p>cost efficiency = energy_supplied_for_what_we_want / £_supplied</p>
 </blockquote>
 <p>The price of 1 kwh of electricity is three times that of 1 kwh of gas. Even though a gas boiler loses 15% to the flue it will still work out cheaper than electric heating in most cases.</p>
-</section>
-</section>
-<section id="demand-for-energy" class="level1">
-<h1>Demand for energy</h1>
-<p>To maintain temperature we need to provide energy at the same rate it is lost via leakage and ventilation. The higher the temperature gap between inside and outside, the faster the loss via leakage/ventilation so correspondingly more energy is needed to replace that loss.</p>
-<section id="leakage" class="level2">
-<h2 class="anchored" data-anchor-id="leakage">Leakage</h2>
-<blockquote class="blockquote">
-<p>Leakage kwh = Area * U * deltaT</p>
-</blockquote>
-<p>Energy is leaked through walls, windows, floor and ceiling. Energy does not get “used up”. Eventually it all leaves the room via one of these surfaces.</p>
-<p>Area is the square metres of the surface. So the leakage is directly proportional to the area.</p>
-<p>DeltaT is the difference between the room temperature and outside temperature. If it is 10C inside and 10C outside then leakage is zero. If you heat your house to the same temperature in each room then leakage through internal walls is zero; downstairs ceiling is zero; upstairs floor is zero. To maintain 20C room temperature when it temperature is 0C outside requires double the energy of when it is 10C outside as delta is 20 versus 10.</p>
-<p>U varies according to the material and thickness. A typical wall will have layers of different material each of different materials and thickness. The U value represents how those materials conduct heat in aggregate. For a modern house U values are clearer than older houses where you may not know the materials used and they may have degraded over time. The table shows examples of typical U values:</p>
-<p><img src="uvalues.png" class="img-fluid"></p>
-<p>This shows:</p>
-<ul>
-<li>Modern homes are much more efficient than older homes
-<ul>
-<li>A new wall eliminates 50% of the leakage versus an uninsulated wall</li>
-<li>A new window eliminates 80% of leakage versus a single glazed window</li>
-<li>A new roof eliminates 90% of the leakage versus an uninsulated roof</li>
-<li>A new floor eliminates 80% of the leakage from an uninsulated wooden floor</li>
-</ul></li>
-<li>Windows have five times the leakage per square metre versus walls</li>
-<li>Floors are just as leaky as roofs. On an older house it is easy to insulate the roof. Once that is done the floor is leaking six times more heat than the roof. Many think that heat rises so the ceiling/roof is key. Actually it is not heat that rises but hot air. Unless you have holes in your ceiling the air will stay in the room. Therefore heat loss through the floor is just as critical as the roof. Unfortunately this can be hard to address on older properties.</li>
-</ul>
-</section>
-<section id="ventilation" class="level2">
-<h2 class="anchored" data-anchor-id="ventilation">Ventilation</h2>
-<blockquote class="blockquote">
-<p>ventilation loss = .33 * Air changes per hour * Volume * deltaT</p>
-</blockquote>
-<p>If your home were air tight then you would suffocate. So there is some air coming in from outside through gaps under doors, vents and elsewhere. The leakage formula does not work here as U is infinite. The issue is how fast the air is coming in.</p>
-<p>It is not clear how to estimate Air changes per hour (ACPH). I am using figures from Engineering toolbox who suggest .33 + .33 * number of external windows/doors. Multiple alternatives such as the OU suggest circa .5. Great_home suggest 1.5.</p>
-<p>[Engineering Toolbox]<a href="https://www.engineeringtoolbox.com/air-change-rate-d_882.html" class="uri">https://www.engineeringtoolbox.com/air-change-rate-d_882.html</a></p>
-<p>[Open University]<a href="https://www.open.edu/openlearn/nature-environment/energy-buildings/content-section-2.4.1" class="uri">https://www.open.edu/openlearn/nature-environment/energy-buildings/content-section-2.4.1</a></p>
-</section>
-<section id="example-of-leakageventilation-from-a-room" class="level2">
-<h2 class="anchored" data-anchor-id="example-of-leakageventilation-from-a-room">Example of leakage/ventilation from a room</h2>
-<p>There is an online calculator to apply the formulae</p>
-<p>[Online calculator]<a href="https://great-home.co.uk/radiator-sizing-guide-and-btu-calculator" class="uri">https://great-home.co.uk/radiator-sizing-guide-and-btu-calculator</a></p>
-<p>I have adapted this using my own assumptions for a single room but there is a lot of guesswork:</p>
-<ul>
-<li>Cavity wall insulation in my house is from 1935 so it may be low standard or have deteriorated</li>
-<li>It is unclear what material is hidden in the floors, walls and ceiling following multiple extensions in different years</li>
-<li>The attic is insulated but there are old metal tanks that conduct heat. Too big to fit through the rafters.</li>
-<li>Unclear how to set ACPH. Used .7 but could be .5 or 1.5</li>
-</ul>
-<p><img src="office pie.png" class="img-fluid"></p>
-<p>When temperature outside is -1C it requires slightly more than a 1 kw electric fire to maintain temperature in my office. The estimate of demand using the U value formula is 1.4K. This is in the right ballpark but could be 40% too high. Also it is very sensitive to the ACPH factor as 24% of energy loss is via ventilation.</p>
-<p>Tried a bedroom as well. There are a few expected differences. Smaller room; upstairs demand is lower as an insulated ceiling is better than uninsulated floor; and windows upstairs are smaller but older. The biggest drivers are the size of room and ACPH. Other variations in characteristics seem to balance out.</p>
-<p>I have expanded the calculations for the office to the rest of the house based on room size only. This gives total maintenance energy of 12kwh, 9kwh, 6.7kwh at -1C, 5C, 10C respectively. Heating the house from cold is in addition to this. My smart meter spikes when the heating goes on. The spike is because it has to heat the water from cold; and because the deltaT is over 20C so the kwh of the radiator is at its highest. After a few hours it stabilises at half the peak.</p>
-</section>
 </section>
 <section id="supply-of-energy" class="level1">
 <h1>Supply of energy</h1>
@@ -331,60 +244,8 @@ gtag('config', 'G-2VEP128SFL', { 'anonymize_ip': true});
 <p>Power to heat room = cp * density * volume * deltaT Time to heat room = Energy/Power / 60 minutes</p>
 </blockquote>
 <p>Unfortunately these formulae ignore leakage. When the room is cold there is not so much leakage. However as it warms the leakage increases and the power available gets soaked up by the leakage leaving less and less to heat the room. As both the leakage and energy supplied are changing as it warms the calculation is not straightforward. Neverthless it does mean that we need significantly more than maintenance energy during the warm up period.</p>
-</section>
-<section id="heating-one-room-instead-of-the-whole-house" class="level1">
-<h1>Heating one room instead of the whole house</h1>
-<section id="walls-floor-and-ceiling" class="level2">
-<h2 class="anchored" data-anchor-id="walls-floor-and-ceiling">Walls, floor and ceiling</h2>
-<p>Internal walls and ceiling are a similar temperature to the office so do not leak. In a heated house the leakage is via one external wall plus the floor. Once the heating is turned off there are now leaks through four external walls; ceiling and floor. That is six external surfaces instead of two. Whilst the temperature difference is not as high as with outside there is still a big increase in leakage which requires more energy.</p>
-<p>This can be quantified. Assuming the unheated rooms are at 8C then this increases the demand from 1.4kwh to 2.2kwh. If the gap were 4C then it would be 2.6kwh. At 70C the radiator only outputs 1.7kwh so it looks insufficient to heat the room.</p>
-<p>Energy used = energy supplied. So if the radiator did manage to output 2.7kwh we woukld expect energy used to be 2.7kwh or perhaps a little more. However the smart meter shows this one room costs not 2.6kwh but 8kwh! Similarly five rooms with 11.5Kwh of radiators costs 15Kwh.</p>
-<p>So where does the missing 4-5kwh go? The answer is leakage from the boiler and pipes.</p>
-</section>
-<section id="boiler" class="level2">
-<h2 class="anchored" data-anchor-id="boiler">Boiler</h2>
-<p>My boiler is 24kwh. The rated efficiency is 97% with condensing and 87% without. At 70/60 there is no condensing so the boiler is 87% efficient and the leak is 13% * 8kwh = 1 kwh so there is still a gap of 4.3kwh. For the five rooms the boiler flue loses 2kwh so there is a gap of 3.5kwh.</p>
-<p>At lower temperature there is supposedly a cost saving of up to 10% from condensing. However you can see from the graph below that condensing only starts to happen at the “dew point” and to get a 10% saving the boiler would need to have a return temperature of 4C. Boiler output temperature would be at most 20C higher so 24C; and radiator temperature 20C. Not nearly enough to heat a room.</p>
-<p><img src="dewpoint.png" class="img-fluid"></p>
-<p>Even in the Spring the boiler output needs to be at least 60C output to heat the house. This would be around 50C return temperature which equates to 3% saving. Potentially you may get an additional saving whilst it is warming the water at startup and you have cold water coming back. However once the boiler is up and running the return temperature will be at least 50C. Any less and the house won’t warm up.</p>
-<p>Still worth taking the 3% saving where you can. That means setting the boiler output temperature to 60C if the radiators are warm enough. I find this is only OK if the outside temperature is 5C+. Any less than that requires 70C to reach and maintain 20C inside the house. Even at 10C it is much faster to warm the house at 70C than 60C.</p>
-</section>
-<section id="pipes" class="level2">
-<h2 class="anchored" data-anchor-id="pipes">Pipes</h2>
-<p>Even though the radiators are all turned off the hot water is circulating around the whole system. If you are heating the whole house this does not matter even if the pipes are uninsulated because any heat from the pipes is inside the heated envelope and contributes to heating the rooms. In this case the pipes, often uninsulated, are carrying hot water through cold rooms.</p>
-<p>A rough estimate is that the pipes go the length of the house plus width plus height. Times two because there is an outbound and return pipe. Could be more as the pipes may follow a circuitous route after extensions were build. This comes out as 65m of 22m pipe <span class="citation" data-cites="60W/m">@60W/m</span> plus say 10m of 15mm pipe <span class="citation" data-cites="45W/m">@45W/m</span>. Total leakage from pipes 4.3kw</p>
-<p>This is close to the missing kw for single room heating. The five room heating loses a bit less as some pipes pass through heated rooms and any energy emitted supports the radiator.</p>
-<p>Bottom line is that central heating is designed to heat the whole house and is efficient doing that. For a single room it is more cost effective to use a 1 kwh electric fire than 8kwh of gas. Heating five rooms with central heating costs 3kwh/room so equivalent cost to a 1 kw electric fire.</p>
-<p>Note that this is based on an above average sized house built in 1935 so your mileage may vary.</p>
-</section>
-</section>
-<section id="the-answers" class="level1">
-<h1>The answers</h1>
-<p>Based on the above we can answer the questions raised at the start</p>
-<section id="why-are-my-energy-bills-so-high-when-i-have-most-of-the-radiators-switched-off" class="level2">
-<h2 class="anchored" data-anchor-id="why-are-my-energy-bills-so-high-when-i-have-most-of-the-radiators-switched-off">Why are my energy bills so high when I have most of the radiators switched off?</h2>
-<p>Central heating is designed to heat the whole house. If you only heat one or a few rooms then there is a lot of waste. in practice a room with a 1.3khw radiator costs 8kwh on the smart meter.</p>
-<ol type="1">
-<li>Turning the heating off took the room has gone from two external surfaces to six. This doubles the leakage costing an additional 1.3kwh.</li>
-<li>Hot water pipes flow throughout the whole house. If the heating is off then this heat is lost and at a faster rate as the pipes are in cold rooms. This costs 4kwh.</li>
-<li>The boiler loses 13% through the flue. Condensing is supposed to save 10% but in practice this does not work well. This costs 1kwh.</li>
-</ol>
-</section>
-<section id="how-can-i-reduce-my-energy-usage" class="level2">
-<h2 class="anchored" data-anchor-id="how-can-i-reduce-my-energy-usage">How can I reduce my energy usage?</h2>
-<ol type="1">
-<li>Add more insulation</li>
-<li>Find any air gaps and fill them</li>
-<li>Turn off the heating when you don’t need it. This includes when you are out and in Spring/Autumn</li>
-<li>Turn the boiler down to 60C whenever it is enough to heat the house</li>
-</ol>
-</section>
-<section id="when-is-it-more-effective-to-use-electric-heaters-than-gas-central-heating" class="level2">
-<h2 class="anchored" data-anchor-id="when-is-it-more-effective-to-use-electric-heaters-than-gas-central-heating">When is it more effective to use electric heaters than gas central heating?</h2>
-<p>It is cheaper to use electric heating for up to four large rooms. Mostly this is because of heat lost via pipes in the cold rooms. In practice we rarely stay in one room. Even where we do, walking through a cold hall to a cold kitchen does not feel very homely. It is an option in limited circumstances such as if you are working all day in an office room that has a kettle.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
